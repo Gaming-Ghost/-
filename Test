@@ -1,0 +1,58 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        Console.WriteLine("Ваш баланс?");
+        int money = Convert.ToInt32(Console.ReadLine());
+
+        Console.WriteLine("Посмотрите на список:");
+        Console.WriteLine("1 - Сок [20р.]");
+        Console.WriteLine("2 - Килограмм конфет [95р.]");
+        Console.WriteLine("3 - Чипсы [70р.]");
+        Console.WriteLine("4 - Планшет [30000р.]");
+        Console.WriteLine("5 - Пакет [8р.]");
+        Console.WriteLine("6 - Стаканчик [5р.]");
+        int number = Convert.ToInt32(Console.ReadLine());
+
+        switch (number)
+        {
+            case 1:
+                if (money >= 20)
+                    Console.WriteLine("Заберите свой сок.");
+                else
+                    Console.WriteLine("У ваc недостаточно денег, приходите позже.");
+                break;
+            case 2:
+                if (money >= 95)
+                    Console.WriteLine("Заберите свои конфеты.");
+                else
+                    Console.WriteLine("У ваc недостаточно денег, приходите позже.");
+                break;
+            case 3:
+                if (money >= 70)
+                    Console.WriteLine("Заберите свои чипсы.");
+                else
+                    Console.WriteLine("У ваc недостаточно денег, приходите позже.");
+                break;
+            case 4:
+                if (money >= 30000)
+                    Console.WriteLine("Заберите свой планшет. (Откуда здесь планшет???)");
+                else
+                    Console.WriteLine("У ваc недостаточно денег, приходите позже.");
+                break;
+            case 5:
+                if (money >= 8)
+                    Console.WriteLine("Заберите свой пакет.");
+                else
+                    Console.WriteLine("У ваc недостаточно денег, приходите позже.");
+                break;
+            case 6:
+                if (money >= 5)
+                    Console.WriteLine("Заберите свой стаканчик.");
+                else
+                    Console.WriteLine("У ваc недостаточно денег, приходите позже.");
+                break;
+        }
+    }
+}
